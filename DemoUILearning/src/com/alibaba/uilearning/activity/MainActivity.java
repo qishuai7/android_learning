@@ -5,14 +5,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.alibaba.uilearning.R;
+import com.alibaba.uilearning.activity.lifecycle.FirstActivity;
 import com.alibaba.uilearning.data.DataCategoryInfo;
 import com.alibaba.uilearning.dialog.PopCategoryDialog;
 import com.alibaba.uilearning.dialog.PopCategoryDialog.CategoryClickListener;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -24,6 +29,8 @@ import android.widget.Toast;
  *
  */
 public class MainActivity extends FragmentActivity {
+	private static final String TAG = "MainActivity";
+	private Context mContext = null;
     
     List<DataCategoryInfo> list = new ArrayList<DataCategoryInfo>();
     
@@ -31,21 +38,50 @@ public class MainActivity extends FragmentActivity {
     private LinearLayout mCategoryOverLayout;
     private TextView mCategoryOverTv;
     
+    /* buttons */
+    private Button mActLifeCycleBtn = null;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+        initView();
+        initClick();
         initData();
-        
-        
+    }
+    
+    @Override
+    protected void onPause() {
+    	super.onPause();
+    	Log.d(TAG, "onPause()");
+    }
+    
+    
+    private void initView(){
+    	mContext = this;
+    	
         /* 分类 */
         mCategoryOverLayout = (LinearLayout) this
                 .findViewById(R.id.category_over_layout);
         mCategoryOverTv = (TextView) this.findViewById(R.id.category_over_tv);
 
-        
-
-        /* 分类事件 */
+        /* buttons */
+        mActLifeCycleBtn = (Button)findViewById(R.id.main_btn_act_lifecycle);
+        		
+    }
+    
+    private void initClick(){
+    	mActLifeCycleBtn.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(mContext,FirstActivity.class);
+				startActivity(intent);
+			}
+		});
+    	
+    	/* 分类事件 */
         mCategoryOverLayout.setOnClickListener(new OnClickListener() {
 
             @Override

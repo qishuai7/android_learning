@@ -184,19 +184,27 @@ public final class R {
         public static final int transparent=0x7f020009;
     }
     public static final class id {
-        public static final int action_settings=0x7f090007;
-        public static final int category_over_layout=0x7f090001;
-        public static final int category_over_tv=0x7f090002;
-        public static final int container=0x7f090000;
-        public static final int img_close=0x7f090004;
-        public static final int map_pop_layout=0x7f090003;
-        public static final int pop_dialog=0x7f090005;
-        public static final int widget_button_auto=0x7f090006;
+        public static final int action_settings=0x7f09000c;
+        public static final int category_over_layout=0x7f090006;
+        public static final int category_over_tv=0x7f090007;
+        public static final int container=0x7f090003;
+        public static final int first_start_dialog_act_btn=0x7f090002;
+        public static final int first_start_dialog_btn=0x7f090001;
+        public static final int first_start_second_btn=0x7f090000;
+        public static final int img_close=0x7f090009;
+        public static final int main_btn_act_lifecycle=0x7f090005;
+        public static final int main_buttons_layout=0x7f090004;
+        public static final int map_pop_layout=0x7f090008;
+        public static final int pop_dialog=0x7f09000a;
+        public static final int widget_button_auto=0x7f09000b;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
-        public static final int dialog_category_search_poi=0x7f030001;
-        public static final int pop_category_dialog=0x7f030002;
+        public static final int activity_dialog=0x7f030000;
+        public static final int activity_first=0x7f030001;
+        public static final int activity_main=0x7f030002;
+        public static final int activity_second=0x7f030003;
+        public static final int dialog_category_search_poi=0x7f030004;
+        public static final int pop_category_dialog=0x7f030005;
     }
     public static final class menu {
         public static final int main=0x7f080000;
@@ -205,6 +213,7 @@ public final class R {
         public static final int action_settings=0x7f060002;
         public static final int app_name=0x7f060000;
         public static final int hello_world=0x7f060001;
+        public static final int title_activity_first=0x7f060003;
     }
     public static final class style {
         /** 
