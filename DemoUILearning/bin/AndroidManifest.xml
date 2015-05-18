@@ -21,6 +21,12 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <intent-filter >
+                <data android:mimeType="vnd.android.cursor.dir/vnd.ruixin.login"/>
+            </intent-filter>
+            <intent-filter >
+                <data android:mimeType="vnd.android.cursor.item/vnd.ruixin.login"/>
+            </intent-filter>
         </activity>
         <activity
             android:name="com.alibaba.uilearning.activity.lifecycle.FirstActivity"
@@ -35,6 +41,23 @@
             android:label="@string/title_activity_first"
             android:theme="@android:style/Theme.Dialog" >
         </activity>
+         <activity
+            android:name="com.alibaba.uilearning.activity.ListViewOptimizeActivity"
+            android:label="@string/title_activity_first" >
+        </activity>
+        <activity
+            android:name="com.alibaba.uilearning.activity.ServiceActivity"
+            android:label="@string/title_activity_first" >
+        </activity>
+        <activity
+            android:name="com.alibaba.uilearning.activity.ContentProviderActivity"
+            android:label="@string/title_activity_first" >
+        </activity>
+        <service 
+            android:name="com.alibaba.uilearning.activity.service.MyBaseService" />
+        <provider
+            android:name="com.alibaba.uilearning.activity.contentprovider.ContentProviderDemo"
+            android:authorities="com.ruixin.login" />
     </application>
 
 </manifest>

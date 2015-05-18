@@ -4,7 +4,6 @@ import com.alibaba.uilearning.R;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -61,7 +60,19 @@ public class FirstActivity extends Activity {
 		super.onDestroy();
 		Log.i(TAG, "onDestroy()");
 	}
+	
+	@Override
+	protected void onSaveInstanceState(Bundle outState) {
+	    super.onSaveInstanceState(outState);
+	    Log.i(TAG, "onSaveInstanceState()");
+	}
 
+
+	@Override
+	protected void onRestoreInstanceState(Bundle savedInstanceState) {
+	    super.onRestoreInstanceState(savedInstanceState);
+	    Log.i(TAG, "onRestoreInstanceState()");
+	}
 	
 	private void initClick(){
 		findViewById(R.id.first_start_second_btn).setOnClickListener(new View.OnClickListener() {

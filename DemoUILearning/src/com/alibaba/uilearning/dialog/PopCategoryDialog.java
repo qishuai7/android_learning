@@ -156,19 +156,7 @@ public class PopCategoryDialog implements View.OnClickListener {
         
         widgetCategoryButtonAuto.show(list);
 
-        // mWindow.findViewById(R.id.all_category_btn).setOnClickListener(this);
-        // mWindow.findViewById(R.id.door_category_btn)
-        // .setOnClickListener(this);
-        // mWindow.findViewById(R.id.phone_category_btn).setOnClickListener(
-        // this);
-        // mWindow.findViewById(R.id.address_category_btn).setOnClickListener(
-        // this);
-        // mWindow.findViewById(R.id.watery_category_btn).setOnClickListener(
-        // this);
-        // mWindow.findViewById(R.id.navi_category_btn).setOnClickListener(
-        // this);
-        // mWindow.findViewById(R.id.map_pop_layout).setOnClickListener(this);
-        //
+        mWindow.findViewById(R.id.open_wifi_iv).setOnClickListener(this);
         // initBackgroud();
     }
 
@@ -190,12 +178,22 @@ public class PopCategoryDialog implements View.OnClickListener {
     }
 
     @Override
-    public void onClick(View arg0) {
-        // TODO Auto-generated method stub
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.open_wifi_iv:
+                if(mCategoryClickListener != null){
+                    mCategoryClickListener.OnWifiChangedListener();
+                }
+                break;
+
+            default:
+                break;
+        }
 
     }
     
     public static interface CategoryClickListener {
         public void OnClickListener(View v, int position);
+        public void OnWifiChangedListener();
     }
 }

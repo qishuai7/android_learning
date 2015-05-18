@@ -40,6 +40,10 @@ public class MainActivity extends FragmentActivity {
     
     /* buttons */
     private Button mActLifeCycleBtn = null;
+    private Button mActListViewBtn = null;
+    private Button mStartServiceBtn = null;
+    private Button mOpenPicBtn = null;
+    private Button mContentProviderBtn = null;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +53,7 @@ public class MainActivity extends FragmentActivity {
         initView();
         initClick();
         initData();
+        
     }
     
     @Override
@@ -68,7 +73,10 @@ public class MainActivity extends FragmentActivity {
 
         /* buttons */
         mActLifeCycleBtn = (Button)findViewById(R.id.main_btn_act_lifecycle);
-        		
+        mActListViewBtn = (Button)findViewById(R.id.main_btn_listview);
+        mStartServiceBtn = (Button)findViewById(R.id.main_btn_service);
+        mOpenPicBtn  = (Button)findViewById(R.id.main_btn_open_pic);
+        mContentProviderBtn  = (Button)findViewById(R.id.main_btn_content_provider);
     }
     
     private void initClick(){
@@ -80,6 +88,44 @@ public class MainActivity extends FragmentActivity {
 				startActivity(intent);
 			}
 		});
+    	
+    	mActListViewBtn.setOnClickListener(new View.OnClickListener() {
+            
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mContext,ListViewOptimizeActivity.class);
+                startActivity(intent);
+            }
+        });
+    	
+    	mStartServiceBtn.setOnClickListener(new View.OnClickListener() {
+               
+               @Override
+               public void onClick(View v) {
+                   Intent intent = new Intent(mContext,ServiceActivity.class);
+                   startActivity(intent);
+               }
+           });
+    	
+    	mOpenPicBtn.setOnClickListener(new View.OnClickListener() {
+            
+            @Override
+            public void onClick(View v) {
+               Intent intent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+               startActivity(intent);
+               // 打开图库选择图片
+               //TODO http://www.oschina.net/question/157182_53236
+            }
+        });
+    	
+    	mContentProviderBtn.setOnClickListener(new View.OnClickListener() {
+            
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mContext,ContentProviderActivity.class);
+                startActivity(intent);
+            }
+        });
     	
     	/* 分类事件 */
         mCategoryOverLayout.setOnClickListener(new OnClickListener() {
@@ -95,6 +141,11 @@ public class MainActivity extends FragmentActivity {
                          Toast.makeText(MainActivity.this, position + "", Toast.LENGTH_SHORT).show();
                          
                      }
+
+                    @Override
+                    public void OnWifiChangedListener() {
+                        Toast.makeText(MainActivity.this, "wifi changed clicked..", Toast.LENGTH_SHORT).show();
+                    }
                  });
                  p.show(list);
             }

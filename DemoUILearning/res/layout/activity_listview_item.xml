@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alibaba.uilearning.activity.lifecycle.FirstActivity" >
+	<TextView 
+	    android:id="@+id/item_title"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="title"/>
+	<TextView 
+	    android:id="@+id/item_text"
+	    android:layout_below="@id/item_title"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="text"/>
+
+	<Button 
+	    android:id="@+id/item_button"
+	    android:layout_alignParentRight="true"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="clicked me" />
+</RelativeLayout>

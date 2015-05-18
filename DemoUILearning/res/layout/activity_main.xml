@@ -5,37 +5,74 @@
     android:layout_height="match_parent"
     tools:context="com.alibaba.uilearning.activity.MainActivity"
     tools:ignore="MergeRootFrame" >
-    
+
     <LinearLayout
-        android:id="@+id/main_buttons_layout" 
+        android:id="@+id/main_buttons_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button 
+        android:orientation="horizontal" >
+
+        <Button
             android:id="@+id/main_btn_act_lifecycle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Activity lifecycle"/>
-        
+            android:text="Activity lifecycle" />
+
+        <Button
+            android:id="@+id/main_btn_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity listview " />
     </LinearLayout>
-    
+
     <LinearLayout
-                android:id="@+id/category_over_layout"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_below="@id/main_buttons_layout" >
+        android:id="@+id/category_over_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/main_buttons_layout"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" >
 
-                <TextView
-                    android:id="@+id/category_over_tv"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center_vertical"
-                    android:background="@drawable/select_main_clicked" />
+        <TextView
+            android:id="@+id/category_over_tv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/select_main_clicked" />
+    </LinearLayout>
 
-            </LinearLayout>
-    
+    <LinearLayout
+        android:id="@+id/main_buttons_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/category_over_layout"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/main_btn_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity service " />
+
+        <Button
+            android:id="@+id/main_btn_open_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打开图库" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_buttons_1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/main_btn_content_provider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="content provider" />
+    </LinearLayout>
+
 </RelativeLayout>
-

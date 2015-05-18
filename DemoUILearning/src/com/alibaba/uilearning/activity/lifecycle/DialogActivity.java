@@ -52,5 +52,18 @@ public class DialogActivity extends Activity {
 		super.onDestroy();
 		Log.i(TAG, "onDestroy()");
 	}
+	
+	@Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        Log.i(TAG, "onSaveInstanceState()");
+    }
+
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        Log.i(TAG, "onRestoreInstanceState()");
+    }
 
 }

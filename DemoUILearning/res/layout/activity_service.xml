@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:id="@+id/service_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/service_btn_start_Service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start service" />
+
+        <Button
+            android:id="@+id/service_btn_stop_Service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stop service " />
+    </LinearLayout>
+    
+     <LinearLayout
+        android:layout_below="@id/service_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/service_btn_bind_Service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bind service" />
+
+        <Button
+            android:id="@+id/service_btn_unbind_Service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="unbind service " />
+    </LinearLayout>
+
+  
+
+</RelativeLayout>
