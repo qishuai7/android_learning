@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.autonavi.gxdtaojin.MainActivity"
+    tools:ignore="MergeRootFrame" >
+    
+    <Button 
+        android:id="@+id/dialog_loading_default_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="默认dialog"/>
+    
+    <Button 
+        android:id="@+id/dialog_loading_with_cancle_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dialog(可取消)"/>
+    
+</LinearLayout>
+

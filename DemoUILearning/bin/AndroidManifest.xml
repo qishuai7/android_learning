@@ -7,6 +7,8 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="19" />
+    
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />  
 
     <application
         android:allowBackup="true"
@@ -55,9 +57,22 @@
         </activity>
         <service 
             android:name="com.alibaba.uilearning.activity.service.MyBaseService" />
+        <service 
+            android:name="com.alibaba.uilearning.activity.service.PlayerService"
+            android:process=":remote" >
+            <intent-filter >
+                <action android:name="com.alibaba.uilearning.activity.service.PlayerService"/>
+            </intent-filter>
+        </service>
         <provider
             android:name="com.alibaba.uilearning.activity.contentprovider.ContentProviderDemo"
             android:authorities="com.ruixin.login" />
+        
+        <receiver android:name=".BootCompletedReceiver">  
+    		<intent-filter>    
+        		<action android:name="android.intent.action.BOOT_COMPLETED" />    
+   			 </intent-filter>  
+		</receiver>  
     </application>
 
 </manifest>
