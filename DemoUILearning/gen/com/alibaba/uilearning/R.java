@@ -185,7 +185,7 @@ public final class R {
         public static final int transparent=0x7f02000a;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a001d;
+        public static final int action_settings=0x7f0a001e;
         public static final int category_over_layout=0x7f0a000d;
         public static final int category_over_tv=0x7f0a000e;
         public static final int container=0x7f0a0000;
@@ -209,6 +209,7 @@ public final class R {
         public static final int map_pop_layout=0x7f0a0018;
         public static final int open_wifi_iv=0x7f0a001c;
         public static final int pop_dialog=0x7f0a001a;
+        public static final int red_tip_layout=0x7f0a001d;
         public static final int service_btn_bind_Service=0x7f0a0016;
         public static final int service_btn_start_Service=0x7f0a0014;
         public static final int service_btn_stop_Service=0x7f0a0015;
@@ -228,6 +229,7 @@ public final class R {
         public static final int activity_service=0x7f030008;
         public static final int dialog_category_search_poi=0x7f030009;
         public static final int pop_category_dialog=0x7f03000a;
+        public static final int red_tip=0x7f03000b;
     }
     public static final class menu {
         public static final int main=0x7f090000;

@@ -254,11 +254,14 @@ public class WidgetCategoryButtonAuto extends LinearLayout {
 					tempFrameLayout.setLayoutParams(lpNormalBtn);
 				}
 
-				ImageView redTipIv = new ImageView(mContext);
+				TextView redTipIv = new TextView(mContext);
 				redTipIv.setLayoutParams(lpRedTip);
-				redTipIv.setImageResource(R.drawable.myprofile_push_tip_img);
+				redTipIv.setGravity(Gravity.CENTER);
+				redTipIv.setBackgroundResource(R.drawable.myprofile_push_tip_img);
 				if (!info.isRedTip) {
 					redTipIv.setVisibility(View.GONE);
+				}else{
+				    redTipIv.setText(info.redTipNumber + "");
 				}
 
 				TextView tv = new TextView(mContext);

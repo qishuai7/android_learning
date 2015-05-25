@@ -180,6 +180,7 @@ public class MainActivity extends FragmentActivity {
 		d5.name = "水牌";
 		d5.picId = R.drawable.button_clicked;
 		d5.isRedTip = true;
+		d5.redTipNumber = 12;
 
 		DataCategoryInfo d6 = new DataCategoryInfo();
 		d6.type = 1;
