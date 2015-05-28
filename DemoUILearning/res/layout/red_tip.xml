@@ -11,4 +11,6 @@
        android:gravity="center"
        android:background="@drawable/myprofile_push_tip_img"/>
 
+   
+
 </RelativeLayout>

@@ -170,52 +170,60 @@ public final class R {
         public static final int head_bar_height=0x7f06000d;
     }
     public static final class drawable {
-        public static final int button_clicked=0x7f020000;
-        public static final int cate_line=0x7f020001;
-        public static final int close_fist=0x7f020002;
-        public static final int dark_transparent=0x7f02000b;
-        public static final int ic_launcher=0x7f020003;
-        public static final int listview_item_bg=0x7f02000c;
-        public static final int myprofile_push_tip_img=0x7f020004;
-        public static final int notify_normal_bg_drawable=0x7f020008;
-        public static final int notify_press_bg_drawable=0x7f020009;
-        public static final int open_checkwifi__icon=0x7f020005;
-        public static final int select_main_clicked=0x7f020006;
-        public static final int tanchuang=0x7f020007;
-        public static final int transparent=0x7f02000a;
+        public static final int btn_category_bth_bg_selector=0x7f020000;
+        public static final int btn_category_font_color_selector=0x7f020001;
+        public static final int button_clicked=0x7f020002;
+        public static final int cate_line=0x7f020003;
+        public static final int close_fist=0x7f020004;
+        public static final int dark_transparent=0x7f02000f;
+        public static final int ic_launcher=0x7f020005;
+        public static final int listview_item_bg=0x7f020010;
+        public static final int myprofile_push_tip_img=0x7f020006;
+        public static final int notify_normal_bg_drawable=0x7f02000c;
+        public static final int notify_press_bg_drawable=0x7f02000d;
+        public static final int open_checkwifi__icon=0x7f020007;
+        public static final int select_main_clicked=0x7f020008;
+        public static final int tanchuang=0x7f020009;
+        public static final int tanchuang_btn=0x7f02000a;
+        public static final int tanchuang_btn_hui=0x7f02000b;
+        public static final int transparent=0x7f02000e;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a001e;
-        public static final int category_over_layout=0x7f0a000d;
-        public static final int category_over_tv=0x7f0a000e;
+        public static final int action_settings=0x7f0a0022;
+        public static final int category_over_layout=0x7f0a0011;
+        public static final int category_over_tv=0x7f0a0012;
         public static final int container=0x7f0a0000;
         public static final int dialog_loading_default_btn=0x7f0a0001;
         public static final int dialog_loading_with_cancle_btn=0x7f0a0002;
+        public static final int first_start_change_me_tv=0x7f0a0007;
+        public static final int first_start_checkbox=0x7f0a0009;
+        public static final int first_start_crash=0x7f0a0008;
         public static final int first_start_dialog_act_btn=0x7f0a0005;
         public static final int first_start_dialog_btn=0x7f0a0004;
+        public static final int first_start_et=0x7f0a0006;
         public static final int first_start_second_btn=0x7f0a0003;
-        public static final int img_close=0x7f0a0019;
-        public static final int item_button=0x7f0a0009;
-        public static final int item_text=0x7f0a0008;
-        public static final int item_title=0x7f0a0007;
-        public static final int lv=0x7f0a0006;
-        public static final int main_btn_act_lifecycle=0x7f0a000b;
-        public static final int main_btn_content_provider=0x7f0a0012;
-        public static final int main_btn_listview=0x7f0a000c;
-        public static final int main_btn_open_pic=0x7f0a0011;
-        public static final int main_btn_service=0x7f0a0010;
-        public static final int main_buttons_1=0x7f0a000f;
-        public static final int main_buttons_layout=0x7f0a000a;
-        public static final int map_pop_layout=0x7f0a0018;
-        public static final int open_wifi_iv=0x7f0a001c;
-        public static final int pop_dialog=0x7f0a001a;
-        public static final int red_tip_layout=0x7f0a001d;
-        public static final int service_btn_bind_Service=0x7f0a0016;
-        public static final int service_btn_start_Service=0x7f0a0014;
-        public static final int service_btn_stop_Service=0x7f0a0015;
-        public static final int service_btn_unbind_Service=0x7f0a0017;
-        public static final int service_buttons_layout=0x7f0a0013;
-        public static final int widget_button_auto=0x7f0a001b;
+        public static final int img_close=0x7f0a001d;
+        public static final int item_button=0x7f0a000d;
+        public static final int item_text=0x7f0a000c;
+        public static final int item_title=0x7f0a000b;
+        public static final int lv=0x7f0a000a;
+        public static final int main_btn_act_lifecycle=0x7f0a000f;
+        public static final int main_btn_content_provider=0x7f0a0016;
+        public static final int main_btn_listview=0x7f0a0010;
+        public static final int main_btn_open_pic=0x7f0a0015;
+        public static final int main_btn_service=0x7f0a0014;
+        public static final int main_buttons_1=0x7f0a0013;
+        public static final int main_buttons_layout=0x7f0a000e;
+        public static final int map_pop_layout=0x7f0a001c;
+        public static final int open_wifi_iv=0x7f0a0020;
+        public static final int pop_dialog=0x7f0a001e;
+        public static final int red_tip_layout=0x7f0a0021;
+        public static final int service_btn_bind_Service=0x7f0a001a;
+        public static final int service_btn_start_Service=0x7f0a0018;
+        public static final int service_btn_stop_Service=0x7f0a0019;
+        public static final int service_btn_unbind_Service=0x7f0a001b;
+        public static final int service_buttons_layout=0x7f0a0017;
+        public static final int widget_button_auto=0x7f0a001f;
     }
     public static final class layout {
         public static final int activity_client_service=0x7f030000;
@@ -228,7 +236,7 @@ public final class R {
         public static final int activity_second=0x7f030007;
         public static final int activity_service=0x7f030008;
         public static final int dialog_category_search_poi=0x7f030009;
-        public static final int pop_category_dialog=0x7f03000a;
+        public static final int pop_category_dialog2=0x7f03000a;
         public static final int red_tip=0x7f03000b;
     }
     public static final class menu {
@@ -270,5 +278,6 @@ public final class R {
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f080001;
+        public static final int ButtonGreen=0x7f080002;
     }
 }

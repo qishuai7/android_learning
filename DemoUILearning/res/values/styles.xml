@@ -16,5 +16,11 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
+    
+    <style name="ButtonGreen" parent="@android:style/Widget.Button">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@drawable/btn_category_font_color_selector</item>
+        <item name="android:background">@drawable/btn_category_bth_bg_selector</item>
+    </style>
 
 </resources>

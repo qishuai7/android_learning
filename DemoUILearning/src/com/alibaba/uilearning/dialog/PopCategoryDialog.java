@@ -131,7 +131,7 @@ public class PopCategoryDialog implements View.OnClickListener {
 
         mDialog.show();
         mWindow = mDialog.getWindow();
-        mWindow.setContentView(R.layout.pop_category_dialog);
+        mWindow.setContentView(R.layout.pop_category_dialog2);
         mSelectView = mWindow.findViewById(R.id.pop_dialog);
         mWindow.setLayout(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
         WindowManager.LayoutParams wl = mWindow.getAttributes();

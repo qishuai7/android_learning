@@ -10,7 +10,6 @@ import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.widget.Button;
 import android.widget.FrameLayout;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.util.AttributeSet;
@@ -24,25 +23,26 @@ import android.view.View;
  */
 public class WidgetCategoryButtonAuto extends LinearLayout {
 	private Context mContext = null;
-	LayoutParams lpMatchLayout = new LayoutParams(LayoutParams.MATCH_PARENT,
-			LayoutParams.WRAP_CONTENT);
-	LayoutParams lpNormalBtn = new LayoutParams(LayoutParams.WRAP_CONTENT,
-			LayoutParams.WRAP_CONTENT);
-	LayoutParams lpLastBtn = new LayoutParams(LayoutParams.WRAP_CONTENT,
-			LayoutParams.WRAP_CONTENT);
-	Drawable topDrawable = getResources()
-			.getDrawable(R.drawable.button_clicked);
 
 	/* 数据源 */
 	public  List<DataCategoryInfo> list = null;
 	/* 每行button个数 */
-	public static int mDefaultRowButtonCount = 3;
+	public static int mDefaultRowButtonCount = 4;
 	/* 间距 */
 	public static int mMarginButton = 20;
 
 	private ArrayList<Button> buttonList = new ArrayList<Button>();
 
 	private OnCategoryBtnWidgetClickListener mListener = null;
+	
+    LayoutParams lpMatchLayout = new LayoutParams(LayoutParams.MATCH_PARENT,
+            LayoutParams.WRAP_CONTENT);
+    LayoutParams lpNormalBtn = new LayoutParams(LayoutParams.WRAP_CONTENT,
+            LayoutParams.WRAP_CONTENT);
+    LayoutParams lpLastBtn = new LayoutParams(LayoutParams.WRAP_CONTENT,
+            LayoutParams.WRAP_CONTENT);
+    Drawable topDrawable = getResources()
+            .getDrawable(R.drawable.button_clicked);
 
 	public WidgetCategoryButtonAuto(Context context) {
 		super(context);
@@ -260,8 +260,6 @@ public class WidgetCategoryButtonAuto extends LinearLayout {
 				redTipIv.setBackgroundResource(R.drawable.myprofile_push_tip_img);
 				if (!info.isRedTip) {
 					redTipIv.setVisibility(View.GONE);
-				}else{
-				    redTipIv.setText(info.redTipNumber + "");
 				}
 
 				TextView tv = new TextView(mContext);

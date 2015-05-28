@@ -23,4 +23,33 @@
   	    android:layout_height="wrap_content"
   	    android:text="start dialog act"/>
   	
+  	<EditText 
+  	    android:id="@+id/first_start_et"
+  	    android:layout_below="@id/first_start_dialog_act_btn"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:text="横竖屏切换"/>
+  	
+  	<TextView 
+  	   android:id="@+id/first_start_change_me_tv"
+  	    android:layout_below="@id/first_start_et"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:background="@color/blue"
+  	    android:text="看我状态保存没？" />
+  	
+  	
+  	<Button 
+  	    android:id="@+id/first_start_crash"
+  	    android:layout_below="@id/first_start_change_me_tv"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:text="奔溃时生命周期"/>
+  	
+  	 	<CheckBox 
+  	 	android:id="@+id/first_start_checkbox"    
+  	 	android:layout_below="@id/first_start_crash"
+  	 	android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:text="checkbox"/>
 </RelativeLayout>
