@@ -9,6 +9,16 @@ package com.alibaba.uilearning;
 
 public final class R {
     public static final class attr {
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int textSize=0x7f010000;
     }
     public static final class color {
         /**  文字规则 
@@ -189,7 +199,7 @@ public final class R {
         public static final int transparent=0x7f02000e;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0022;
+        public static final int action_settings=0x7f0a002e;
         public static final int category_over_layout=0x7f0a0011;
         public static final int category_over_tv=0x7f0a0012;
         public static final int container=0x7f0a0000;
@@ -202,28 +212,40 @@ public final class R {
         public static final int first_start_dialog_btn=0x7f0a0004;
         public static final int first_start_et=0x7f0a0006;
         public static final int first_start_second_btn=0x7f0a0003;
-        public static final int img_close=0x7f0a001d;
+        public static final int img_close=0x7f0a0029;
         public static final int item_button=0x7f0a000d;
         public static final int item_text=0x7f0a000c;
         public static final int item_title=0x7f0a000b;
         public static final int lv=0x7f0a000a;
         public static final int main_btn_act_lifecycle=0x7f0a000f;
-        public static final int main_btn_content_provider=0x7f0a0016;
+        public static final int main_btn_content_provider=0x7f0a0018;
         public static final int main_btn_listview=0x7f0a0010;
         public static final int main_btn_open_pic=0x7f0a0015;
+        public static final int main_btn_parcel=0x7f0a0016;
+        public static final int main_btn_scroll_light=0x7f0a001a;
         public static final int main_btn_service=0x7f0a0014;
         public static final int main_buttons_1=0x7f0a0013;
+        public static final int main_buttons_2=0x7f0a0017;
         public static final int main_buttons_layout=0x7f0a000e;
-        public static final int map_pop_layout=0x7f0a001c;
-        public static final int open_wifi_iv=0x7f0a0020;
-        public static final int pop_dialog=0x7f0a001e;
-        public static final int red_tip_layout=0x7f0a0021;
-        public static final int service_btn_bind_Service=0x7f0a001a;
-        public static final int service_btn_start_Service=0x7f0a0018;
-        public static final int service_btn_stop_Service=0x7f0a0019;
-        public static final int service_btn_unbind_Service=0x7f0a001b;
-        public static final int service_buttons_layout=0x7f0a0017;
-        public static final int widget_button_auto=0x7f0a001f;
+        public static final int main_im_intent=0x7f0a0019;
+        public static final int map_pop_layout=0x7f0a0028;
+        public static final int msg_et=0x7f0a001c;
+        public static final int my_scroll_light_tv=0x7f0a001f;
+        public static final int next=0x7f0a0020;
+        public static final int open_wifi_iv=0x7f0a002c;
+        public static final int parcel_obj_tv=0x7f0a001b;
+        public static final int pop_dialog=0x7f0a002a;
+        public static final int prev=0x7f0a0021;
+        public static final int red_tip_layout=0x7f0a002d;
+        public static final int scroll_light_btn=0x7f0a001e;
+        public static final int scroll_light_tv=0x7f0a001d;
+        public static final int service_btn_bind_Service=0x7f0a0026;
+        public static final int service_btn_start_Service=0x7f0a0024;
+        public static final int service_btn_stop_Service=0x7f0a0025;
+        public static final int service_btn_unbind_Service=0x7f0a0027;
+        public static final int service_buttons_layout=0x7f0a0023;
+        public static final int switcher02=0x7f0a0022;
+        public static final int widget_button_auto=0x7f0a002b;
     }
     public static final class layout {
         public static final int activity_client_service=0x7f030000;
@@ -233,11 +255,13 @@ public final class R {
         public static final int activity_listview=0x7f030004;
         public static final int activity_listview_item=0x7f030005;
         public static final int activity_main=0x7f030006;
-        public static final int activity_second=0x7f030007;
-        public static final int activity_service=0x7f030008;
-        public static final int dialog_category_search_poi=0x7f030009;
-        public static final int pop_category_dialog2=0x7f03000a;
-        public static final int red_tip=0x7f03000b;
+        public static final int activity_parcel=0x7f030007;
+        public static final int activity_scroll_light=0x7f030008;
+        public static final int activity_second=0x7f030009;
+        public static final int activity_service=0x7f03000a;
+        public static final int dialog_category_search_poi=0x7f03000b;
+        public static final int pop_category_dialog2=0x7f03000c;
+        public static final int red_tip=0x7f03000d;
     }
     public static final class menu {
         public static final int main=0x7f090000;
@@ -280,4 +304,35 @@ public final class R {
         public static final int AppTheme=0x7f080001;
         public static final int ButtonGreen=0x7f080002;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a auto3d.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #auto3d_textSize com.alibaba.uilearning:textSize}</code></td><td></td></tr>
+           </table>
+           @see #auto3d_textSize
+         */
+        public static final int[] auto3d = {
+            0x7f010000
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.alibaba.uilearning.R.attr#textSize}
+          attribute's value can be found in the {@link #auto3d} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.alibaba.uilearning:textSize
+        */
+        public static final int auto3d_textSize = 0;
+    };
 }

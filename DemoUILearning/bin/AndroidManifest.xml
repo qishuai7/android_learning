@@ -50,11 +50,29 @@
         <activity
             android:name="com.alibaba.uilearning.activity.ServiceActivity"
             android:label="@string/title_activity_first" >
+              <intent-filter>
+                <action android:name="android.intent.action.mytest" />
+                <category android:name="android.intent.category.DEFAULT" /> 
+            </intent-filter>
         </activity>
         <activity
             android:name="com.alibaba.uilearning.activity.ContentProviderActivity"
             android:label="@string/title_activity_first" >
         </activity>
+         <activity
+            android:name="com.alibaba.uilearning.activity.ParcelActivity"
+            android:label="@string/title_activity_first" >
+            <intent-filter>
+                <action android:name="android.intent.action.mytest" />
+                <category android:name="android.intent.category.DEFAULT" /> 
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.alibaba.uilearning.activity.ScrollLightActivity"
+            android:label="@string/title_activity_first" >
+        </activity>
+            
+            
         <service 
             android:name="com.alibaba.uilearning.activity.service.MyBaseService" />
         <service 
@@ -66,7 +84,8 @@
         </service>
         <provider
             android:name="com.alibaba.uilearning.activity.contentprovider.ContentProviderDemo"
-            android:authorities="com.ruixin.login" />
+            android:authorities="com.ruixin.login"
+            android:exported="true" />
         
         <receiver android:name=".BootCompletedReceiver">  
     		<intent-filter>    

@@ -7,11 +7,13 @@ import java.util.List;
 import com.alibaba.uilearning.R;
 import com.alibaba.uilearning.activity.lifecycle.FirstActivity;
 import com.alibaba.uilearning.data.DataCategoryInfo;
+import com.alibaba.uilearning.data.Students;
 import com.alibaba.uilearning.dialog.PopCategoryDialog;
 import com.alibaba.uilearning.dialog.PopCategoryDialog.CategoryClickListener;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
@@ -44,6 +46,9 @@ public class MainActivity extends FragmentActivity {
     private Button mStartServiceBtn = null;
     private Button mOpenPicBtn = null;
     private Button mContentProviderBtn = null;
+    private Button mParcelBtn = null;
+    private Button mImIntentBtn = null;
+    private Button mScrollIntentBtn = null;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,6 +82,9 @@ public class MainActivity extends FragmentActivity {
         mStartServiceBtn = (Button)findViewById(R.id.main_btn_service);
         mOpenPicBtn  = (Button)findViewById(R.id.main_btn_open_pic);
         mContentProviderBtn  = (Button)findViewById(R.id.main_btn_content_provider);
+        mParcelBtn  = (Button)findViewById(R.id.main_btn_parcel);
+        mImIntentBtn =  (Button)findViewById(R.id.main_im_intent);
+        mScrollIntentBtn  =  (Button)findViewById(R.id.main_btn_scroll_light);
     }
     
     private void initClick(){
@@ -127,6 +135,15 @@ public class MainActivity extends FragmentActivity {
             }
         });
     	
+    	mScrollIntentBtn.setOnClickListener(new View.OnClickListener() {
+            
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mContext,ScrollLightActivity.class);
+                startActivity(intent);
+            }
+        });
+        
     	/* 分类事件 */
         mCategoryOverLayout.setOnClickListener(new OnClickListener() {
 
@@ -151,6 +168,33 @@ public class MainActivity extends FragmentActivity {
             }
         });
 
+        mParcelBtn.setOnClickListener(new View.OnClickListener() {
+            
+            @Override
+            public void onClick(View view) {
+                Students stu = new Students();
+                stu.id = 2;
+                stu.name = "张三";
+                stu.sex = "女";
+               // Intent intent = new Intent(mContext,ParcelActivity.class);
+                Intent intent = new Intent("android.intent.action.mytest");
+                Log.d("QS", "intent action = " +  intent.getAction());
+               
+                
+                intent.putExtra(ParcelActivity.PARCEL_KEY, stu);
+                startActivity(intent);
+            }
+        });
+        
+        mImIntentBtn.setOnClickListener(new View.OnClickListener() {
+            
+            @Override
+            public void onClick(View view) {
+                Uri uri = Uri.parse("tel:10086");
+                Intent intent = new Intent(Intent.ACTION_DIAL,uri);
+                startActivity(intent);
+            }
+        });
     }
 
     

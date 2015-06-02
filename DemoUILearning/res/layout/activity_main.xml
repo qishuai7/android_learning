@@ -60,9 +60,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="打开图库" />
+         <Button
+            android:id="@+id/main_btn_parcel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="序列化 parcelable" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/main_buttons_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/main_buttons_1"
@@ -74,6 +80,27 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="content provider" />
+        
+         <Button
+            android:id="@+id/main_im_intent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="隐式intent" />
     </LinearLayout>
 
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_buttons_2"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/main_btn_scroll_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="跑马灯效果" />
+        
+        
+    </LinearLayout>
+    
 </RelativeLayout>

@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto3d="http://schemas.android.com/apk/res/com.alibaba.uilearning"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/msg_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="foucs.." />
+
+    <TextView
+        android:id="@+id/scroll_light_tv"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/msg_et"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="跑马灯 " />
+    
+    <Button
+        android:id="@+id/scroll_light_btn" 
+        android:layout_below="@id/scroll_light_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="单击我"/>
+    
+    <com.alibaba.uilearning.view.WidgetMarqueeTextView
+        android:id="@+id/my_scroll_light_tv"
+        android:layout_below="@id/scroll_light_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="跑马灯my" />
+    
+    <LinearLayout 
+        android:layout_below="@id/my_scroll_light_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+         <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="next!" />
+
+        <Button
+            android:id="@+id/prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="prev!" />
+    </RelativeLayout>
+
+    <com.alibaba.uilearning.view.WidgetAutoTextView
+        android:id="@+id/switcher02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        auto3d:textSize="30sp" />
+        
+    </LinearLayout>
+
+</RelativeLayout>
